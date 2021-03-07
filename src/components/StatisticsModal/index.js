@@ -34,7 +34,7 @@ export default function ModalStatistics({open, handleClose}) {
         if (url !== '') {
             setFinished(false)
             setLoading(true)
-            const response = await api.get(`link/${url.replace('http://localhost:3000/', '')}`);
+            const response = await api.get(`link/${url.replace('https://shortn.vercel.app/', '').replace('shortn.vercel.app/', '')}`);
             setNumClick(response.data.numClicks)
             setFullUrl(response.data.url)
             setLoading(false)

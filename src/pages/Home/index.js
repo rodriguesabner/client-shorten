@@ -57,7 +57,7 @@ const HomePage = () => {
 
             setTimeout(() => {
                 handleClose()
-                setCustomUrl(`http://localhost:3000/${response.data.short}`)
+                setCustomUrl(`https://shortn.vercel.app/${response.data.short}`)
                 setShowCustomDisplay(true)
             }, 1000)
         }
