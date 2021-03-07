@@ -7,6 +7,11 @@ export const Layout = styled.div`
   
   background: #fff;
   z-index: 10;
+  
+  position: sticky;
+  top: 0;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 `
 
 export const Container = styled.div`

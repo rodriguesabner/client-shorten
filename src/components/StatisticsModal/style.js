@@ -96,6 +96,18 @@ export const ResultContainer = styled.div`
     display: flex;
     justify-content: space-between;
 
+    :nth-child(1) {
+
+      p {
+        @media (max-width: 768px) {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 200px;          
+        }
+      }
+    }
+
     :nth-child(2) {
       border-top: 1px solid rgba(0, 0, 0, .2);
       margin-top: 1em;

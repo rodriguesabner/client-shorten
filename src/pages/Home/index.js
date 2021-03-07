@@ -91,10 +91,19 @@ const HomePage = () => {
                         forever.</b>
                     </p>
 
-                    <form onSubmit={(e) => shortLink(e)}>
+                    <form
+                        onSubmit={(e) => shortLink(e)}
+                    >
                         <InputDiv>
-                            <input placeholder={"Type or Paste your link"} value={url}
-                                   onChange={(e) => setUrl((e.target.value))}/>
+                            <input
+                                placeholder={"Type or Paste your link"}
+                                value={url}
+                                onChange={(e) => setUrl((e.target.value))}
+                                spellCheck={"off"}
+                                autoComplete="off"
+                                autoCorrect={"off"}
+                                autoCapitalize={"off"}
+                            />
                             <button type={"submit"}>
                                 Shorten
                             </button>
