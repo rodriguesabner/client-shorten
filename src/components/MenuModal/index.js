@@ -37,6 +37,7 @@ export default function ModalMenu({open, handleClose, openStats}) {
                 }}
             >
                 <Fade in={open}>
+
                     <Layout className={classes.paper}>
                         <RepeaterContainer>
                             <ul>

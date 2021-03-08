@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const Layout = styled.div`
   width: 100%;
-  //height: 100%;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -15,6 +15,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 2em;
+  
+  @media(max-width: 768px){
+    height: auto;
+  }
 `
 
 export default createGlobalStyle`
@@ -27,10 +31,6 @@ export default createGlobalStyle`
 
   html {
     background: var(--primary);
-    //overflow: hidden;
-
-    max-height: 100vh;
-    max-width: 100vw;
   }
 
   html, body {
